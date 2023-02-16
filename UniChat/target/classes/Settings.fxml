@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="informatica.unical.it.controller.SettingsController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="183.0" styleClass="primary-color" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="AccountButton" mnemonicParsing="false" onAction="#OnAccountPressed" prefHeight="49.0" prefWidth="204.0" styleClass="primary-color" text="Account" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" startX="-100.0" />
+            <Button fx:id="ThemeButton" mnemonicParsing="false" onAction="#OnThemeClicked" prefHeight="49.0" prefWidth="204.0" styleClass="primary-color" text="Theme" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" startX="-100.0" translateY="270.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Line>
+            <Line endX="100.0" startX="-100.0" translateY="-1.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="BackButton" mnemonicParsing="false" onAction="#OnBackClicked" prefHeight="38.0" prefWidth="204.0" styleClass="primary-color">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Back1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="269.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="100.0" layoutX="300.0" layoutY="199.0" rotate="90.0" startX="-300.0" />
+      <AnchorPane fx:id="AccountPane" layoutX="201.0" prefHeight="393.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="AccountPane" prefHeight="400.0" prefWidth="400.0" styleClass="primary-color" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="ChangePasswordButton" layoutX="137.0" layoutY="340.0" mnemonicParsing="false" onAction="#OnChangePasswordClicked" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Change Password" />
+                  <ImageView fx:id="ProfileImage" fitHeight="72.0" fitWidth="80.0" layoutX="164.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/DefaultUserImage.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="ChangeImageButton" layoutX="135.0" layoutY="117.0" mnemonicParsing="false" onAction="#OnChangeButtonPressed" style="-fx-background-color: white; -fx-background-radius: 15;" text="Change Profile Image" />
+                  <PasswordField fx:id="CurrentPassword" layoutX="130.0" layoutY="270.0" promptText="Current Password" />
+                  <PasswordField fx:id="NewPassword" layoutX="130.0" layoutY="300.0" promptText="New Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ThemePane" prefHeight="400.0" prefWidth="400.0" styleClass="secondary-color" AnchorPane.bottomAnchor="0.0">
+               <children>
+                  <RadioButton fx:id="LightRadio" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#OnLightRadioCLicked">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tg" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="DarkRadio" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" onAction="#OnDarkRadioClicked" toggleGroup="$tg">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="14.0" layoutY="14.0" text="Select theme: " textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="45.0" text="Light" textFill="GREY">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="70.0" text="Dark" textFill="GREY">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

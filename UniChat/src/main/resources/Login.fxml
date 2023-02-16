@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="200.0" minWidth="450.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="informatica.unical.it.controller.LoginController">
+   <children>
+      <Label layoutX="92.0" layoutY="35.0" text="Username:" textFill="GREY">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="94.0" layoutY="70.0" text="Password:" textFill="GREY">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="EmailTextArea" layoutX="159.0" layoutY="31.0" style="-fx-background-radius: 15;" />
+      <PasswordField fx:id="PasswordField" layoutX="159.0" layoutY="66.0" style="-fx-background-radius: 15;" />
+      <Button fx:id="RegisterButton" layoutX="184.0" layoutY="161.0" mnemonicParsing="false" onAction="#OnRegisterPressed" prefHeight="25.0" prefWidth="99.0" style="-fx-background-radius: 15;" styleClass="button-color" text="Register" />
+      <Button fx:id="LoginButton" defaultButton="true" layoutX="184.0" layoutY="102.0" mnemonicParsing="false" onAction="#OnLoginPressed" prefHeight="25.0" prefWidth="99.0" style="-fx-background-radius: 15;" styleClass="button-color" text="Login" />
+   </children>
+</AnchorPane>

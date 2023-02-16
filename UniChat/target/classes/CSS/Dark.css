@@ -1,0 +1,19 @@
+.primary-color
+{
+    -fx-background-color: #252525;
+}
+
+.secondary-color
+{
+    -fx-background-color: #202020;
+}
+
+.contact-color
+{
+    -fx-background-color: #202020;
+}
+
+.button-color
+{
+    -fx-background-color: white;
+}
